@@ -1,7 +1,7 @@
 import './App.css';
 import { useState, useEffect, useCallback } from "react";
 import RuleConditionRows from "./Component/RuleConditionRows";
-import MainComponent from './Component/MainComponent';
+import SecondaryNavBar from './Component/SecondaryNavBar';
 
 export default function App() {
   const [jsonData, setJsonData] = useState(null);
@@ -158,7 +158,7 @@ export default function App() {
 
   return (
       <div className="container-fluid my-4" style={{ padding: '20px' }}>
-        <MainComponent/>
+        <SecondaryNavBar/>
         <h3 className="text-center mb-4">Existing Rules</h3>
         <table className="table table-bordered text-center" style={{ width: '100%', border: '1px solid black' }}>
           <thead className="thead-light">
